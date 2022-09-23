@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Split calcualtor</title>
+  </head>
+  <body>
+    <section class="app">
+      <div class="container">
+        <!-- calc-area -->
+        <div class="calc-area">
+          <section class="bill">
+            <label>Bill</label>
+            <input class="bill-value"  type="text" />
+          </section>
+          <section class="peoples">
+            <label>Number of People</label>
+            <input class="people-value" type="number" />
+          </section>
+          <section class="tip-btn-container">
+            <label>Select tip %</label>
+            <button type="button" value="5" class="btns">5%</button>
+            <button type="button" value="10" class="btns">10%</button>
+            <button type="button" value="15" class="btns">15%</button><br />
+            <button type="button" value="25" class="btns">25%</button>
+            <button type="button" value="50" class="btns">50%</button>
+            <input
+              class="custom-value"
+              type="number"
+              value="Custom"
+              placeholder="Custom"
+            />
+          </section>
+        </div>
+        <div class="balance-area">
+          <section class="tip-area">
+            <div class="tip-head">Tip Amount</div>
+            <div class="tip-value">$ 0.00</div>
+          </section>
+          <section class="total-balance">
+            <div class="total">Total</div>
+            <div class="balance">$0.00</div>
+          </section>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- javascript -->
+    <script src="./index.js"></script>
+  </body>
+</html>

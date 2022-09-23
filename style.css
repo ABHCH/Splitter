@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --my-bg-color1: #c4e4e7;
+    --my-bg-color2: #1a484b;
+    --my-bg-color3: #55c3ad;
+    --my-bg-color4: #f3f8fc;
+}
+
+body {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    background-color: var(--my-bg-color1);
+    width: 70%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px -1px 29px -7px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.balance-area {
+    background-color: var(--my-bg-color2);
+    height: 100%;
+    width: 50%;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.calc-area {
+    width: 50%;
+    padding: .5rem;
+}
+
+.calc-area label {
+    display: block;
+}
+
+.bill-value {
+    width: 100%;
+    margin-top: .5rem;
+    padding: .5rem;
+    outline: none;
+    background-color: var(--my-bg-color4);
+    outline: none;
+    border: none;
+}
+
+.people-value {
+    width: 100%;
+    margin-top: .5rem;
+    padding: .5rem;
+    background-color: var(--my-bg-color4);
+    outline: none;
+    border: none;
+}
+
+.tip-btn-container {
+    margin-top: 1rem;
+}
+
+button {
+    padding: .4rem;
+    font-size: 1.6rem;
+    width: 28%;
+    margin-top: .5rem;
+    border-radius: 7px;
+    background-color: var(--my-bg-color2);
+    border: none;
+    color: white;
+}
+
+.custom-value {
+    width: 30%;
+    padding: .8rem;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: var(--my-bg-color4);
+}
+
+.custom-value::placeholder {
+    font-size: 1.4rem;
+}
+
+.peoples {
+    margin-top: 2rem;
+}
+
+.tip-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    color: white;
+}
+
+.total-balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    color: white;
+}
+
+.reset-btn {
+    background-color: var(--my-bg-color3);
+    display: block;
+    margin: auto;
+    width: 100%;
+}
